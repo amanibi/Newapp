@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Payroll Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Best Payroll Software</h1>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#payroll">Payroll Processing</a></li>
+            <li><a href="#taxes">Tax Management</a></li>
+            <li><a href="#direct-deposit">Direct Deposit</a></li>
+            <li><a href="#attendance">Time and Attendance</a></li>
+            <li><a href="#garnishment">Garnishment Management</a></li>
+            <li><a href="#reports">Custom Reports</a></li>
+            <li><a href="#benefits">Benefits Administration</a></li>
+            <li><a href="#international-payroll">Multi-State/International Payroll</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard -->
+    <main id="dashboard">
+        <section>
+            <h2>Payroll Dashboard</h2>
+            <p>Welcome, Admin. Manage payroll, taxes, attendance, and employee benefits efficiently.</p>
+        </section>
+    </main>
+
+    <!-- Payroll Processing -->
+    <main id="payroll" style="display: none;">
+        <section>
+            <h2>Payroll Processing</h2>
+            <button id="run-payroll">Run Payroll</button>
+            <p>Status: <span id="payroll-status">Not Processed</span></p>
+        </section>
+    </main>
+
+    <!-- Tax Management -->
+    <main id="taxes" style="display: none;">
+        <section>
+            <h2>Tax Management</h2>
+            <p>Federal Taxes: $<span id="federal-taxes">0</span></p>
+            <p>State Taxes: $<span id="state-taxes">0</span></p>
+            <button id="generate-tax-report">Generate Tax Report</button>
+        </section>
+    </main>
+
+    <!-- Direct Deposit -->
+    <main id="direct-deposit" style="display: none;">
+        <section>
+            <h2>Direct Deposit Processing</h2>
+            <button id="process-direct-deposit">Process Direct Deposits</button>
+            <p>Status: <span id="deposit-status">Pending</span></p>
+        </section>
+    </main>
+
+    <!-- Time and Attendance -->
+    <main id="attendance" style="display: none;">
+        <section>
+            <h2>Time and Attendance</h2>
+            <p>Total Hours Worked: <span id="hours-worked">160</span></p>
+            <p>Overtime: <span id="overtime">0</span> hours</p>
+        </section>
+    </main>
+
+    <!-- Garnishment Management -->
+    <main id="garnishment" style="display: none;">
+        <section>
+            <h2>Garnishment Management</h2>
+            <p>Total Garnishments: $<span id="garnishment-amount">0</span></p>
+            <button id="process-garnishment">Process Garnishment</button>
+        </section>
+    </main>
+
+    <!-- Customizable Reports -->
+    <main id="reports" style="display: none;">
+        <section>
+            <h2>Customizable Payroll Reports</h2>
+            <form id="report-form">
+                <label for="report-type">Report Type:</label>
+                <select id="report-type">
+                    <option value="earnings">Earnings</option>
+                    <option value="tax">Tax Liability</option>
+                    <option value="benefits">Benefits</option>
+                </select>
+                <button type="submit">Generate Report</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Benefits Administration -->
+    <main id="benefits" style="display: none;">
+        <section>
+            <h2>Benefits Administration</h2>
+            <p>Health Insurance: Opted In</p>
+            <p>401(k) Contributions: Employee: 5%, Employer: 3%</p>
+            <button id="update-benefits">Update Benefits</button>
+        </section>
+    </main>
+
+    <!-- Multi-State/International Payroll -->
+    <main id="international-payroll" style="display: none;">
+        <section>
+            <h2>Multi-State and International Payroll</h2>
+            <p>Current Work Location: <span id="work-location">New York, USA</span></p>
+            <p>Currency: <span id="currency">USD</span></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="node.js"></script>
+</body>
+</html>
